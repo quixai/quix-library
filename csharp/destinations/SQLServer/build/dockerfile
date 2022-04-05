@@ -1,0 +1,10 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
+WORKDIR /project
+COPY --from=git /project .
+RUN dotnet publish ./Quix.Snowflake.Writer/Quix.Snowflake.Writer.csproj -o /buildoutput -r linux-x64 -c Release
+
+
+FROM mcr.microsoft.com/dotnet/runtime:5.0
+WORKDIR /app
+COPY --from=build /buildoutput .
+ENTRYPOINT dotnet Quix.Snowflake.Writer.dll

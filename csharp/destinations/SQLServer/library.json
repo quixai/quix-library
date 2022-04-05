@@ -1,0 +1,43 @@
+{
+    "libraryItemId": "9ec049c0-d6d4-4543-805a-1dbac7c3e962",
+    "name": "Snowflake Connector - Sink",
+    "language": "C#",
+    "tags": {
+        "Complexity": ["Advanced"],
+		"SDK Usage": ["Read SDK"],
+        "Pipeline Stage": ["Destination"],
+        "Technology": ["Snowflake"]
+    },
+    "shortDescription": "Publish data to Snowflake",
+	"DefaultFile": "Quix.Snowflake.Writer/Worker.cs",
+	"EntryPoint": "build/dockerfile",
+	"RunEntryPoint": "Quix.Snowflake.Writer/Quix.Snowflake.Writer.csproj",
+	"IconFile": "snowflake.jpg",
+    "Variables": [
+		{
+		  "Name": "Broker__TopicName",
+		  "Type": "EnvironmentVariable",
+		  "InputType": "InputTopic",
+		  "Description": "Name of the input topic to read from",
+		  "DefaultValue": "",
+		  "Required": true
+		},
+		{
+		  "Name": "Snowflake__ConnectionString",
+		  "Type": "EnvironmentVariable",
+		  "InputType": "HiddenText",
+		  "Description": "The Snowflake database connection string",
+		  "DefaultValue": "",
+		  "Required": true
+		}
+    ],
+	"DeploySettings":
+	{
+		"DeploymentType": "Service",
+		"CpuMillicores": 500,
+		"MemoryInMb": 800,
+		"Replicas": 1,
+		"PublicAccess": false,
+		"ValidateConnection": true
+	}
+}

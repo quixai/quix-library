@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Quix.Sdk.Streaming" Version="0.4.5-20220330.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.6" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0-dev-00839" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.2.0-dev-00244" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Quix.Snowflake.Application\Quix.Snowflake.Application.csproj" />
+        <ProjectReference Include="..\Quix.Snowflake.Infrastructure\Quix.Snowflake.Infrastructure.csproj" />
+    </ItemGroup>
+</Project>

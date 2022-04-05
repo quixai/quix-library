@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Quix.Sdk.Streaming" Version="0.4.2-20220316.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Quix.Snowflake.Domain\Quix.Snowflake.Domain.csproj" />
+      <ProjectReference Include="..\Quix.Snowflake.Infrastructure\Quix.Snowflake.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
