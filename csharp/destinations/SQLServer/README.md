@@ -1,16 +1,16 @@
-# C# Snowflake Sink
+# C# SqlServer Sink
 
-The sample contained in this folder gives an example on how to stream data from Quix to Snowflake, it handles both parameter and event data.
+The sample contained in this folder gives an example on how to stream data from Quix to SqlServer, it handles both parameter and event data.
 
 ## Requirements / Prerequisites
- - A Snowflake account.
+ - A SqlServer account.
 
 ## Environment variables
 
 The code sample uses the following environment variables:
 
 - **Broker__TopicName**: Name of the input topic to read from.
-- **Snowflake__ConnectionString**: The Snowflake database connection string. 
+- **SqlServer__ConnectionString**: The SqlServer database connection string. 
   - e.g. account=xxx.north-europe.azure;user=xxx;password=xxx;db=xxx
 
 ## Known limitations 
