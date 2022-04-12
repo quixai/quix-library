@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NSubstitute;
 using Quix.Snowflake.Application.Metadata;
 using Quix.Snowflake.Application.Streaming;
 using Quix.Snowflake.Application.TimeSeries;
@@ -90,13 +91,13 @@ namespace Quix.Snowflake.Writer
                 conn.ConnectionString = config.ConnectionString;
                 return conn;
             });
-            services.AddSingleton<IDbConnection>(sc => sc.GetRequiredService<SnowflakeDbConnection>()); // using IDbConnection at some places for mocking purposes
+            services.AddSingleton<IDbConnection>(sc => Substitute.For<IDbConnection>()); // using IDbConnection at some places for mocking purposes
             
             // Stream context
             services.AddScoped<StreamPersistingComponent>();
 
             // TimeSeries Context
-            services.AddSingleton<ITimeSeriesWriteRepository, TimeSeriesWriteRepository>();
+            services.AddSingleton<ITimeSeriesWriteRepository, NullTimeSeriesWriteRepository>();
 
             services.AddSingleton<QuixConfigHelper>();
             services.AddSingleton((sp) => new TopicId(sp.GetRequiredService<QuixConfigHelper>().GetConfiguration().GetAwaiter().GetResult().topicId));
@@ -112,11 +113,11 @@ namespace Quix.Snowflake.Writer
             });
             
             // Metadata Context
-            services.AddSingleton<IStreamRepository, StreamRepository>();
-            services.AddSingleton<IParameterRepository, ParameterRepository>();
-            services.AddSingleton<IParameterGroupRepository, ParameterGroupRepository>();
-            services.AddSingleton<IEventRepository, EventRepository>();
-            services.AddSingleton<IEventGroupRepository, EventGroupRepository>();
+            services.AddSingleton<IStreamRepository, NullStreamRepository>();
+            services.AddSingleton<IParameterRepository, NullParameterRepository>();
+            services.AddSingleton<IParameterGroupRepository, NullParameterGroupRepository>();
+            services.AddSingleton<IEventRepository, NullEventRepository>();
+            services.AddSingleton<IEventGroupRepository, NullEventGroupRepository>();
             services.AddSingleton<IParameterPersistingService, ParameterPersistingService>();
             services.AddSingleton<IEventPersistingService, EventPersistingService>();
             services.AddSingleton<IMetadataBufferedPersistingService, MetadataBufferedPersistingService>();

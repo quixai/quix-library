@@ -20,4 +20,17 @@ namespace Quix.Snowflake.Domain.TimeSeries.Repositories
         /// </summary>
         Task WriteTelemetryEvent(string topicId, IEnumerable<KeyValuePair<string, IEnumerable<EventDataRow>>> streamEventData);
     }
+
+    public class NullTimeSeriesWriteRepository : ITimeSeriesWriteRepository
+    {
+        public Task WriteTelemetryData(string topicId, IEnumerable<KeyValuePair<string, IEnumerable<ParameterDataRowForWrite>>> streamParameterData)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task WriteTelemetryEvent(string topicId, IEnumerable<KeyValuePair<string, IEnumerable<EventDataRow>>> streamEventData)
+        {
+            return Task.CompletedTask;
+        }
+    }
 }

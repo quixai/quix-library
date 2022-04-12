@@ -19,6 +19,7 @@ namespace Quix.Snowflake.Infrastructure.Shared
 
         public void Validate()
         {
+            return;
             this.logger.LogInformation($"Connecting to Snowflake database {connection.Database}");
             var openTask = Task.Run(() => { connection.Open(); });
             Task.WaitAny(openTask, Task.Delay(10000));

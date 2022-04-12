@@ -23,4 +23,17 @@ namespace Quix.Snowflake.Domain.Repositories
         /// <param name="requests">The request to execute</param>
         Task BulkWrite(IEnumerable<WriteModel<TelemetryParameterGroup>> requests);
     }
+    
+    public class NullParameterGroupRepository : IParameterGroupRepository
+    {
+        public Task BulkWrite(IEnumerable<WriteModel<TelemetryParameterGroup>> insertRequests)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task<IList<TelemetryParameterGroup>> Get(FilterDefinition<TelemetryParameterGroup> filter)
+        {
+            return Task.FromResult(new List<TelemetryParameterGroup>() as IList<TelemetryParameterGroup>);
+        }
+    }
 }

@@ -19,4 +19,17 @@ namespace Quix.Snowflake.Domain.Repositories
 
         Task<IList<TelemetryStream>> Get(FilterDefinition<TelemetryStream> filter);
     }
+
+    public class NullStreamRepository : IStreamRepository
+    {
+        public Task BulkWrite(IEnumerable<WriteModel<TelemetryStream>> insertRequests)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task<IList<TelemetryStream>> Get(FilterDefinition<TelemetryStream> filter)
+        {
+            return Task.FromResult(new List<TelemetryStream>() as IList<TelemetryStream>);
+        }
+    }
 }
