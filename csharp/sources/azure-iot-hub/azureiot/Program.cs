@@ -17,7 +17,6 @@ namespace azureIot
             var connectionString = Environment.GetEnvironmentVariable("connectionString");
             var hubName = Environment.GetEnvironmentVariable("eventHubName");
 
-            
             // Create a client which holds generic details for creating input and output topics
             var client = new Quix.Sdk.Streaming.QuixStreamingClient();
             
@@ -26,12 +25,6 @@ namespace azureIot
 
             // az iot hub show --query properties.eventHubEndpoints.events.path --name {your IoT Hub name}
             var eventHubName = hubName;
-
-
-            // If you chose to copy the "Event Hub-compatible endpoint" from the "Built-in endpoints" section
-            // of your IoT Hub instance in the Azure portal, you can set the connection string to that value
-            // directly and remove the call to "BuildEventHubsConnectionString".
-            string connectionString = connectionString;
 
             // Create the consumer using the default consumer group using a direct connection to the service.
             // Information on using the client with a proxy can be found in the README for this quick start, here:
