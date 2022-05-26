@@ -21,6 +21,7 @@ var client = new Quix.Sdk.Streaming.QuixStreamingClient();
 using var outputTopic = client.OpenOutputTopic("{placeholder:outputTopic}");
 ```
 
+
 ### Transformation to Quix SDK format
 In code example we simply get the whole JSON message and send it as an event with the Quix SDK.
 
