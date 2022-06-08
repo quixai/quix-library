@@ -3,7 +3,7 @@ Integrate a Reddit feed into your Quix pipeline
 
 ## Requirements/prerequisites
 
-You will need to create a [Reddit App](https://www.reddit.com/prefs/apps). 
+You will need to create a Reddit App [here](https://www.reddit.com/prefs/apps). 
 
 Steps:
 - Provide a name
@@ -12,6 +12,9 @@ Steps:
 - Provide a 'redirect uri'
 - Click 'create app'
 
+Now you can use the 'client id' and 'secret' to configure the Reddit connector.
+
+![graph](reddit_app.png?raw=true)
 
 ## Environment variables
 
