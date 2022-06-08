@@ -2,7 +2,7 @@ from quixstreaming import QuixStreamingClient, StreamEndType, StreamReader
 from quixstreaming.app import App
 from quix_function import QuixFunction
 import os
-
+ 
 subreddit = os.environ["subreddit"].lower()
 title_contains_word = os.environ["titlecontainsword"]
 
