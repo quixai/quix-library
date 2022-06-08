@@ -1,0 +1,73 @@
+{
+	"libraryItemId": "af47596d-089f-4979-b025-aa969d5f591f",
+	"name": "A Reddit Data Source",
+	"language": "Python",
+	"tags": {
+		"Complexity": ["Easy"],
+		"SDK Usage": ["Write SDK"],
+		"Pipeline Stage": ["Source"]
+	},
+	"shortDescription": "A Reddit scraper data feed for your Quix pipeline",
+	"DefaultFile": "main.py",
+	"EntryPoint": "build/dockerfile",
+	"RunEntryPoint": "main.py",
+	"Variables": [
+	{
+		"Name" : "output",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "OutputTopic",
+		"Description" : "This is the output topic for the data",
+		"DefaultValue" : "reddit-data",
+		"Required": true
+	},
+	{
+		"Name" : "reddit_username",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "FreeText",
+		"Description" : "Reddit user name",
+		"DefaultValue" : "",
+		"Required": true
+	},
+	{
+		"Name" : "reddit_password",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "HiddenText",
+		"Description" : "Reddit password",
+		"DefaultValue" : "",
+		"Required": true
+	},
+	{
+		"Name" : "reddit_client_id",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "HiddenText",
+		"Description" : "Reddit client id",
+		"DefaultValue" : "",
+		"Required": true
+	},
+	{
+		"Name" : "reddit_client_secret",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "HiddenText",
+		"Description" : "Reddit client id",
+		"DefaultValue" : "",
+		"Required": true
+	},
+	{
+		"Name" : "subreddit",
+		"Type" : "EnvironmentVariable",
+		"InputType" : "FreeText",
+		"Description" : "The SubReddit to scrape",
+		"DefaultValue" : "",
+		"Required": true
+	}
+	],
+	"DeploySettings":
+	{
+		"DeploymentType": "Service",
+		"CpuMillicores": 200,
+		"MemoryInMb": 200,
+		"Replicas": 1,
+		"PublicAccess": false,
+		"ValidateConnection": false
+	}
+}
