@@ -1,0 +1,23 @@
+{
+    "libraryItemId": "abc-123",
+    "name": "Hello Broken Library Item",
+    "language": "Python",
+    "tags": {
+        "Complexity": ["Easy"],
+		"SDK Usage": ["Write SDK"],
+        "Pipeline Stage": ["Source"],
+        "Popular subjects": ["Quick Start"]
+    },
+    "shortDescription": "The most basic and essential 'Hello World' write sample",
+	"EntryPoint": "build/dockerfile",
+    "Variables": [
+        {
+            "Name" : "output",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "OutputTopic",
+            "Description" : "This is the output topic for hello world data",
+            "DefaultValue" : "hello-world-source",
+            "Required": true
+        }
+    ]    
+}
