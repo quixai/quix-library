@@ -1,5 +1,5 @@
 {
-    "libraryItemId": "19f690fb-32e9-43d0-b6e2-0e86773c5efd",
+    "libraryItemId": "485b9b18-ce5b-4952-99d8-1a0c24dd2584",
     "name": "New York Bikes - Source",
     "language": "Python",
     "tags": {
@@ -8,7 +8,7 @@
         "Pipeline Stage": ["Source"],
         "Use Case": ["Mobility"]
     },
-    "shortDescription": "Write New York CitiBike data to a stream",
+    "shortDescription": "Write New York CitiBike data to a topic in a stream per station",
     "DefaultFile": "main.py",
 	"EntryPoint": "build/dockerfile",
     "RunEntryPoint": "main.py",

@@ -7,11 +7,7 @@ You'll connect to the New York CitiBike API in this sample.
 This is part of the Quix [data science tutorial](https://quix.ai/docs/guides/tutorials/data-science-tutorial.html). 
 
 - NY bikes I - Citibikes (this one): get real time availability of New York bikes.
-- NY bikes II - OpenWeather API: get real time weather forecasts for New York.
-- NY bikes III - prediction: predict near future bikes availability in New York based on current bikes and weather forecasts.
-
-You will need an [OpenWeather (free) account](https://home.openweathermap.org/users/sign_up/) to complete this tutorial.
-
+- NY bikes II - Prediction: predict near future bikes availability in New York based on current bikes numbers.
 
 ## Environment variables
 
