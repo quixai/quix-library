@@ -1,0 +1,26 @@
+{
+    "libraryItemId": "258da76e-ca18-49f3-befd-73fdf034c149",
+    "name": "Pandas empty template - Local Destination",
+    "language": "Python",
+    "tags": {
+        "Complexity": ["Easy"],
+		"SDK Usage": ["Read SDK"],
+        "Pipeline Stage": ["Destination"],
+        "Popular subjects": ["Quick Start"]
+    },
+    "shortDescription": "The most basic 'Hello World' read sample with Pandas",
+    "longDescription": "The most basic 'Hello World' read sample with Pandas. Read the data on your local machine. Don't commit this code to an online repository before removing rhe token",
+    "DefaultFile": "quix_function.py",
+	"EntryPoint": "build/dockerfile",
+    "RunEntryPoint": "main.py",
+    "Variables": [ 
+        {
+            "Name" : "input",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "InputTopic",
+            "Description" : "This is the input topic for demo data",
+            "DefaultValue" : "",
+            "Required": true
+        }
+    ]    
+}
