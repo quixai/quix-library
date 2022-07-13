@@ -19,7 +19,7 @@ payload = json.dumps({
 })
 # configure the request headers
 headers = {
-  'Authorization': 'bearer sdk-c35ea65a30e74116a9bdfb0291ea18e0',
+  'Authorization': 'bearer {placeholder:token}',
   'Content-Type': 'application/json'
 }
 
