@@ -1,0 +1,24 @@
+{
+    "libraryItemId": "b77658b7-b005-4fe7-b69b-a080b536060a",
+    "name": "Quick start - Http source",
+    "language": "Python",
+    "tags": {
+        "Complexity": ["Easy"],
+		"SDK Usage": ["Write SDK"],
+        "Pipeline Stage": ["Source"]
+    },
+    "shortDescription": "Quix quick start project",
+    "DefaultFile": "main.py",
+	"EntryPoint": "build/dockerfile",
+    "RunEntryPoint": "main.py",
+    "Variables": [
+        {
+            "Name" : "output",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "OutputTopic",
+            "Description" : "This is the output topic for Quick Start data",
+            "DefaultValue" : "quick-start-data",
+            "Required": true
+        }
+    ]  
+}
