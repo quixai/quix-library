@@ -1,15 +1,18 @@
 from quixstreaming import QuixStreamingClient, StreamReader
 from quixstreaming.models.parametersbufferconfiguration import ParametersBufferConfiguration
 from quixstreaming.app import App
-from quix_function import QuixFunction
+import pandas as pd
 import os
 
 # Quix injects credentials automatically to the client. Alternatively, you can always pass an SDK token manually as an argument.
 client = QuixStreamingClient(token="{placeholder:token}")
 
 print("Opening input topic")
-input_topic = client.open_input_topic(os.environ["input"])
+input_topic = client.open_input_topic("{placeholder:workspaceId}-{placeholder:input}")
 
+# Callback triggered for each new parameter data.
+def on_pandas_frame_handler(df: pd.DataFrame):
+    print(df.to_string())
 
 # read streams
 def read_stream(new_stream: StreamReader):
@@ -21,9 +24,7 @@ def read_stream(new_stream: StreamReader):
     buffer = new_stream.parameters.create_buffer(buffer_options)
 
     # handle the data in a function to simplify the example
-    quix_function = QuixFunction()
-
-    buffer.on_read_pandas += quix_function.on_pandas_frame_handler
+    buffer.on_read_pandas += on_pandas_frame_handler
 
 
 # Hook up events before initiating read to avoid losing out on any data
