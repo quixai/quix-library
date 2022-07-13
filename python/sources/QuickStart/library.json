@@ -14,7 +14,7 @@
     "Variables": [
         {
             "Name" : "output",
-            "Type" : "EnvironmentVariable",
+            "Type" : "Placeholder",
             "InputType" : "OutputTopic",
             "Description" : "This is the output topic for Quick Start data",
             "DefaultValue" : "quick-start-data",
