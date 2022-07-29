@@ -4,6 +4,7 @@
     "language": "NodeJs",
     "tags": {
         "Complexity": ["Advanced"],
+		"Type": ["Code samples"],
 		"API Usage": ["Reader API (Websockets)", "Writer API (HTTP)"]
     },
     "shortDescription": "The Web and Phone UI applications for the Stream Processing Demo",

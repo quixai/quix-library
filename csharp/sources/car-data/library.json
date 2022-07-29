@@ -4,6 +4,7 @@
     "language": "C#",
     "tags": {
 		"SDK Usage": ["Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Source"]
     },
     "shortDescription": "Stream telemetry car data generated from a simple simulation algorithm",

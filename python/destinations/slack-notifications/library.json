@@ -12,10 +12,11 @@
 		"Pipeline Stage": [
 			"Destination"
 		],
+		"Use Case": ["Onboarding"],
+		"Type": ["Tech connectors"],
 		"Technology": [
 			"Slack"
-		],
-		"Popular subjects": ["Onboarding"]
+		]
 	},
 	"shortDescription": "Easily send notifications to Slack via webhooks",
 	"DefaultFile": "quix_function.py",

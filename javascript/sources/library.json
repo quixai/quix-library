@@ -5,7 +5,8 @@
     "tags": {
         "Complexity": ["Easy"],
 		"API Usage": ["Writer API (HTTP)"],
-        "Popular subjects": ["Quick Start"]
+		"Type": ["Code samples"],
+        "Use Case": ["Quick Start"]
     },
     "shortDescription": "Write data into a topic using HTTP Writer API",
 	"longDescription": "This Javascript sample shows how write data into a topic using our HTTP Writer API",

@@ -6,6 +6,7 @@
         "Complexity": ["Advanced"],
 		"API Usage": ["Reader API (Websockets)", "Writer API (HTTP)"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Code samples"],
         "Use Case": ["Sentiment Analysis"]
     },
     "shortDescription": "Chat application as an example of Quix APIs usage",

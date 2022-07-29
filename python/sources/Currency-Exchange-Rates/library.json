@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Source"]
     },
     "shortDescription": "Replay currency exchange rates of September 2021 as if they happened today",

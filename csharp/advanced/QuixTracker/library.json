@@ -6,6 +6,7 @@
         "Complexity": ["Advanced"],
 		"API Usage": ["Writer API (Websockets)", "Reader API (Websockets)"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Code samples"],
         "Use Case": ["Mobility"]
     },
     "shortDescription": "Xamarin Android app for streaming data to Quix",

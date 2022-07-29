@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Medium"],
 		"SDK Usage": ["Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Source"]
     },
     "shortDescription": "A complete example of how to write data into a topic",

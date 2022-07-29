@@ -5,6 +5,7 @@
     "tags": {
       "Complexity": ["Easy"],
       "SDK Usage": ["Read/Write SDK"],
+	  "Type": ["Code samples"],
       "Pipeline Stage": ["Source"]
     },
     "shortDescription": "Clone topic external to your workspace",

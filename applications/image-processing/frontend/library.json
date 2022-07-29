@@ -5,6 +5,7 @@
     "tags": {
       "Complexity": [ "Medium" ],
       "API Usage": [ "Reader API (Websockets)" ],
+	  "Type": ["Code samples"],
       "Pipeline Stage": ["Destination"]
     },
     "shortDescription": "The Image Processing UI which shows both processed and unprocessed images",

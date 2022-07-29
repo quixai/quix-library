@@ -6,6 +6,7 @@
         "Complexity": ["Medium"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Tech connectors"],
         "Technology": ["AWS"]
     },
     "shortDescription": "Connect your Amazon Kinesis data to a Quix topic with this bridge",

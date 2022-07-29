@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Source"]
     },
     "shortDescription": "Write data from a CSV file into a stream",

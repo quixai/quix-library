@@ -5,6 +5,7 @@
     "tags": { 
         "Complexity": ["Easy"],
 		"SDK Usage": ["Read/Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Transformation"]
     },
     "shortDescription": "Template of how to build in memory view.",

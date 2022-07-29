@@ -6,6 +6,7 @@
         "Complexity": ["Medium"],
 		"SDK Usage": ["Read/Write SDK"],
         "Pipeline Stage": ["Transformation"],
+		"Type": ["Tech connectors"],
 		"Technology": ["RSS"]
     },
     "shortDescription": "Example of how to filter and enhance RSS data",

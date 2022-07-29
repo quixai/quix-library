@@ -6,6 +6,7 @@
         "Complexity": ["Medium"],
 		"SDK Usage": ["Read/Write SDK"],
         "Pipeline Stage": ["Transformation"],
+		"Type": ["Code samples"],
         "Use Case": ["Fraud Detection"]
     },
     "shortDescription": "Clean the data before fraud detection stage",

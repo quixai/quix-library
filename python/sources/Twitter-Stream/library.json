@@ -6,6 +6,7 @@
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Tech connectors"],
         "Technology": ["Twitter"]
     },
     "shortDescription": "Stream Twitter live messages to a Quix topic in real time",

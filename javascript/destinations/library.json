@@ -5,7 +5,8 @@
     "tags": {
         "Complexity": ["Easy"],
 		"API Usage": ["Reader API (Websockets)"],
-        "Popular subjects": ["Quick Start"]
+		"Type": ["Code samples"],
+        "Use Case": ["Quick Start"]
     },
     "shortDescription": "Read data from a topic using our Websockets Reader API",
 	"longDescription": "This Javascript sample shows how to consume data in real time using our Websockets Reader API",

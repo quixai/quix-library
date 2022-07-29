@@ -6,7 +6,8 @@
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
-        "Popular subjects": ["Quick Start"]
+        "Use Case": ["Quick Start"],
+		"Type": ["Basic templates"]
     },
     "shortDescription": "The most basic and essential 'Hello World' source sample",
     "DefaultFile": "main.py",

@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Advanced"],
 		"SDK Usage": ["Read/Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Transformation"]
     },
     "shortDescription": "Handle and transform input for the stream processing demo",

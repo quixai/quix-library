@@ -6,7 +6,8 @@
         "Complexity": ["Advanced"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
-        "Popular subjects": ["Racing"]
+		"Type": ["Code samples"],
+        "Use Case": ["Racing"]
     },
     "shortDescription": "C# Bridge for streaming Codemasters F1 2019 telemetry to Quix",
     "longDescription": "C# Bridge for streaming Codemasters F1 2019 telemetry to Quix. This bridge is capable of streaming the game's telemetry (PC or Console). Note that this bridge must be run locally on the same network as the game",

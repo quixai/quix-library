@@ -5,6 +5,7 @@
     "tags": {
       "Complexity": [ "Medium" ],
       "API Usage": [ "Writer API (HTTP)" ],
+	  "Type": ["Code samples"],
       "Pipeline Stage": ["Source"]
     },
     "shortDescription": "This project contains webpage which is able to capture image from your webcam",

@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Medium"],
 		"SDK Usage": ["Read SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Destination"]
     },
     "shortDescription": "Template of how to build realtime dashboard with Dash.",

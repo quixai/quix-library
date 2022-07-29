@@ -6,6 +6,7 @@
         "Complexity": ["Medium"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Tech connectors"],
         "Technology": ["Azure"]
     },
     "shortDescription": "Connect to Azure IoT and bridge data into Kafka",

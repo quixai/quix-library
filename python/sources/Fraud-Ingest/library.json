@@ -6,6 +6,7 @@
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
         "Pipeline Stage": ["Source"],
+		"Type": ["Code samples"],
         "Use Case": ["Fraud Detection"]
     },
     "shortDescription": "Write raw transaction data to a stream",

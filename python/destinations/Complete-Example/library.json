@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Medium"],
 		"SDK Usage": ["Read SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Destination"]
     },
     "shortDescription": "A complete example of how to read data from a topic",

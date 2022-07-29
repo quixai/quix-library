@@ -6,7 +6,8 @@
         "Complexity": ["Easy"],
 		"SDK Usage": ["Read/Write SDK"],
         "Pipeline Stage": ["Transformation"],
-        "Popular subjects": ["Quick Start"]
+        "Use Case": ["Quick Start"],
+		"Type": ["Basic templates"]
     },
     "shortDescription": "Template of how to transform data between source and destination.",
 	"DefaultFile": "quix_function.py",

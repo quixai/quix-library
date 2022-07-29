@@ -5,6 +5,7 @@
     "tags": {
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
+		"Type": ["Code samples"],
         "Pipeline Stage": ["Source"]
     },
     "shortDescription": "Live data from a permanent magnet synchronous motor (PMSM)",

@@ -6,6 +6,7 @@
 		"Complexity": ["Easy"],
 		"SDK Usage": ["Read SDK"],
 		"Pipeline Stage": ["Destination"],
+		"Type": ["Tech connectors"],
 		"Technology": ["Confluent"]
 	},
 	"shortDescription": "Publish data to your Confluent Kafka topic with this bridge",

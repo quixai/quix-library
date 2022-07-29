@@ -5,7 +5,8 @@
     "tags": {
         "Complexity": ["Easy"],
 		"SDK Usage": ["Write SDK"],
-        "Pipeline Stage": ["Source"]
+        "Pipeline Stage": ["Source"],
+		"Type": ["Tech connectors"]
     },
     "shortDescription": "Write real-time currency data to a stream",
     "DefaultFile": "quix_functions.py",

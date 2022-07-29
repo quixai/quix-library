@@ -6,6 +6,7 @@
         "Complexity": ["Advanced"],
 		"SDK Usage": ["Read SDK"],
         "Pipeline Stage": ["Destination"],
+		"Type": ["Tech connectors"],
         "Technology": ["SQL"]
     },
     "shortDescription": "Publish data to a SQL Database",
