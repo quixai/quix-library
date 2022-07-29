@@ -64,8 +64,13 @@ def get_kinesis_data():
         if len(record_data["Records"]) > 0:
 
             for r in record_data["Records"]:
-                quix_functions.write_data(r["Data"])
+                d = r["Data"]
 
+                if isinstance(d, bytes):
+                    quix_functions.write_data(d.decode())
+                else:
+                    quix_functions.write_data(d)
+                
         behind = record_data["MillisBehindLatest"]
         if behind < 1000:
             time.sleep(1)
