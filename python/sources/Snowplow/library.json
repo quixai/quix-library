@@ -1,0 +1,68 @@
+{
+    "libraryItemId": "87731a49-ee78-4b74-8544-66ac4da07f73",
+    "name": "Snowplow Connector",
+    "language": "Python",
+    "tags": {
+        "Complexity": ["Medium"],
+		"SDK Usage": ["Write SDK"],
+        "Pipeline Stage": ["Source"],
+        "Technology": ["Snowplow"]
+    },
+    "shortDescription": "Connect your Snowplow data to a Quix topic with this bridge",
+    "longDescription": "Connect your Snowplow data to a Quix topic with this bridge<br/>This bridge is for AWS Kinesis backed Snowplow installations",
+    "DefaultFile": "quix_functions.py",
+	"EntryPoint": "build/dockerfile",
+    "RunEntryPoint": "main.py",
+	"IconFile": "icon.png",
+    "Variables": [
+        {
+			"Name" : "output",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "OutputTopic",
+            "Description" : "This is the Quix Topic that will receive the stream",
+            "DefaultValue" : "snowplow-data",
+            "Required": true
+        },
+        {
+            "Name" : "aws_access_key_id",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "FreeText",
+            "Description" : "AWS Access Key Id",
+            "DefaultValue" : "",
+            "Required": true
+        },
+        {
+            "Name" : "aws_secret_access_key",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "HiddenText",
+            "Description" : "AWS Secret Access Key",
+            "DefaultValue" : "",
+            "Required": true
+        },
+        {
+            "Name" : "aws_region_name",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "FreeText",
+            "Description" : "AWS Region Name",
+            "DefaultValue" : "",
+            "Required": true
+        },
+        {
+            "Name" : "aws_stream_name",
+            "Type" : "EnvironmentVariable",
+            "InputType" : "FreeText",
+            "Description" : "The name of the AWS stream you want to use",
+            "DefaultValue" : "",
+            "Required": true
+        }
+    ],
+	"DeploySettings":
+	{
+		"DeploymentType": "Job",
+		"CpuMillicores": 200,
+		"MemoryInMb": 200,
+		"Replicas": 1,
+		"PublicAccess": false,
+		"ValidateConnection": true
+	}
+}

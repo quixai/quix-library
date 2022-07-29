@@ -1,0 +1,3 @@
+quixstreaming==0.4.7a202206201538
+boto3
+snowplow_analytics_sdk
